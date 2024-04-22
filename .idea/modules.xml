@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/applicition/applicition.iml" filepath="$PROJECT_DIR$/applicition/applicition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coures/coures.iml" filepath="$PROJECT_DIR$/coures/coures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daokong.iml" filepath="$PROJECT_DIR$/daokong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daoweb/daoweb.iml" filepath="$PROJECT_DIR$/daoweb/daoweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javawebtext01/javawebtext01.iml" filepath="$PROJECT_DIR$/javawebtext01/javawebtext01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsp/jsp.iml" filepath="$PROJECT_DIR$/jsp/jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsp11-6/jsp11-6.iml" filepath="$PROJECT_DIR$/jsp11-6/jsp11-6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
+    </modules>
+  </component>
+</project>

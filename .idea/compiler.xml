@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="javawebtext01" />
+        <module name="jsp11-6" />
+        <module name="coures" />
+        <module name="jsp" />
+        <module name="applicition" />
+        <module name="login" />
+        <module name="daoweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="applicition" target="11" />
+      <module name="coures" target="11" />
+      <module name="course" target="11" />
+      <module name="daoweb" target="11" />
+      <module name="javawebtext01" target="11" />
+      <module name="jsp" target="11" />
+      <module name="jsp11-6" target="11" />
+      <module name="login" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="daoweb" options="" />
+    </option>
+  </component>
+</project>
