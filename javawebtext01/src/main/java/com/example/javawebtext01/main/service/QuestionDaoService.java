@@ -4,6 +4,7 @@ import com.example.javawebtext01.main.dao.QuestionDao;
 import com.example.javawebtext01.main.dao.QuestionDaoImpl;
 import com.example.javawebtext01.main.db.DBConnection;
 import com.example.javawebtext01.main.pojo.QuestionData;
+import com.example.javawebtext01.main.pojo.Userdata;
 
 import java.util.List;
 
@@ -29,6 +30,34 @@ public class QuestionDaoService implements QuestionDao {
 		try {
 			//if (this.dao.findByProductId(product.getProduct_id()) == null) {// 如果要插入的产品编号不存在
 			flag = this.dao.add(questionData);// 新增一条产品信息
+			//}
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			this.dbconn.close();
+		}
+		return flag;
+	}
+
+	@Override
+	public List<QuestionData> findQuestionAll() throws Exception {
+		List<QuestionData> questionDataList = null;
+		try {
+			questionDataList = this.dao.findQuestionAll();
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			this.dbconn.close();
+		}
+		return questionDataList;
+	}
+
+	@Override
+	public boolean deleteQuestion(int questionId) throws Exception {
+		boolean flag = false; // 标识
+		try {
+			//if (this.dao.findByProductId(product.getProduct_id()) == null) {// 如果要插入的产品编号不存在
+			flag = this.dao.deleteQuestion( questionId);// 新增一条产品信息
 			//}
 		} catch (Exception e) {
 			throw e;

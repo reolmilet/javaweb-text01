@@ -21,7 +21,7 @@
     <ul>
          <h2>试题信息管理</h2>
         <li><a href="<%=request.getContextPath()%>/QuestionSecond/addQuestionindex.jsp" target="right">考试信息管理</a></li>
-        <li><a href="<%=request.getContextPath()%>/QuestionSecond/findQuestionindex.jsp" target="right">考试信息查询</a></li>
+        <li><a href="<%=request.getContextPath()%>/FindQuestionListServlet" target="right">考试信息查询</a></li>
 
     </ul>
     <ul>

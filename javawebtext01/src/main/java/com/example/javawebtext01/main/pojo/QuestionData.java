@@ -13,7 +13,16 @@ public class QuestionData {
     private String admin;
 
 
-    private String delite;
+    private int delete;
+    private String date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public QuestionData(int questionId, String title, String answer, String optionA, String optionB, String optionC, String optionD, String admin) {
         this.questionId = questionId;
@@ -103,12 +112,11 @@ public class QuestionData {
         this.admin = admin;
     }
 
-    public String getDelite() {
-        return delite;
+    public int getDelete() {
+        return delete;
     }
 
-    public void setDelite(String delite) {
-        this.delite = delite;
+    public void setDelete(int delete) {
+        this.delete = delete;
     }
-
 }
