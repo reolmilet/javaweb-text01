@@ -24,7 +24,7 @@
     </tr>
 
     <tr>
-        <td ><input type="submit" value="查找"></td>
+        <td ><input type="submit" value="登录"></td>
         <td ><input type="reset" value="重置"></td>
     </tr>
 </table>

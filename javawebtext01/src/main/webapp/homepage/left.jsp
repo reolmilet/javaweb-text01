@@ -19,9 +19,10 @@
 
     </ul>
     <ul>
-        <h2>考试信息管理</h2>
-        <li>试题信息注册</li>
-        <li>试题信息查询</li>
+         <h2>试题信息管理</h2>
+        <li><a href="<%=request.getContextPath()%>/QuestionSecond/addQuestionindex.jsp" target="right">考试信息管理</a></li>
+        <li><a href="<%=request.getContextPath()%>/QuestionSecond/findQuestionindex.jsp" target="right">考试信息查询</a></li>
+
     </ul>
     <ul>
         <h2>考试管理</h2>

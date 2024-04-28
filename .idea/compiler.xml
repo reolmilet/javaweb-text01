@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="filter" />
         <module name="javawebtext01" />
         <module name="jsp11-6" />
         <module name="coures" />
         <module name="jsp" />
+        <module name="filter2" />
+        <module name="filter3" />
         <module name="applicition" />
         <module name="login" />
         <module name="daoweb" />
@@ -20,6 +23,9 @@
       <module name="coures" target="11" />
       <module name="course" target="11" />
       <module name="daoweb" target="11" />
+      <module name="filter" target="11" />
+      <module name="filter2" target="11" />
+      <module name="filter3" target="11" />
       <module name="javawebtext01" target="11" />
       <module name="jsp" target="11" />
       <module name="jsp11-6" target="11" />

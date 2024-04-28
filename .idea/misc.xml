@@ -5,6 +5,9 @@
     <file type="web" url="file://$PROJECT_DIR$/coures" />
     <file type="web" url="file://$PROJECT_DIR$/daoweb" />
     <file type="web" url="file://$PROJECT_DIR$/demo" />
+    <file type="web" url="file://$PROJECT_DIR$/filter" />
+    <file type="web" url="file://$PROJECT_DIR$/filter2" />
+    <file type="web" url="file://$PROJECT_DIR$/filter3" />
     <file type="web" url="file://$PROJECT_DIR$/javawebtext01" />
     <file type="web" url="file://$PROJECT_DIR$/jsp" />
     <file type="web" url="file://$PROJECT_DIR$/jsp11-6" />
@@ -20,10 +23,13 @@
         <option value="$PROJECT_DIR$/jsp/pom.xml" />
         <option value="$PROJECT_DIR$/jsp11-6/pom.xml" />
         <option value="$PROJECT_DIR$/javawebtext01/pom.xml" />
+        <option value="$PROJECT_DIR$/filter/pom.xml" />
+        <option value="$PROJECT_DIR$/filter2/pom.xml" />
+        <option value="$PROJECT_DIR$/filter3/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/../out" />
   </component>
 </project>
