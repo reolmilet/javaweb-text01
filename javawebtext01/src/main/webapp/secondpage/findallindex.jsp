@@ -30,6 +30,5 @@
 </table>
 </form>
 
-<a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">登录界面</a>
 </body>
 </html>

@@ -7,7 +7,7 @@ public class DBConnection {
 
 	private static final String Driver = "com.mysql.cj.jdbc.Driver";
 
-	private static final String URL = "jdbc:mysql://localhost:3306/javawebtext01?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC";
+	private static final String URL = "jdbc:mysql://localhost:3306/javawebtext01?allowPublicKeyRetrieval=true&useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC";
 
 	private static final String USER = "root";
 	private static final String PASSWORD = "wzj040729";

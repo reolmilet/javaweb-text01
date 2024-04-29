@@ -10,6 +10,13 @@
 <head>
     <title>Title</title>
 </head>
+<script>
+    function invalidateSessions() {
+        fetch('<%=request.getContextPath()%>/InvalidateSessionServlet')
+            .then(response => response.text())
+            .then(data => alert(data));
+    }
+</script>
 <body>
 <ul>
     <ul>
@@ -28,6 +35,11 @@
         <h2>考试管理</h2>
         <li>参加考试</li>
         <li>试题信息查询</li>
+    </ul>
+    <ul>
+
+        <li><button onclick="invalidateSessions()">退出登录</button></li>
+
     </ul>
 
 </ul>

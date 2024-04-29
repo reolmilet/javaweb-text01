@@ -10,7 +10,7 @@
     table { width: 500px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
 </style>
 
-<h1>登录界面</h1>
+<h1>查找界面</h1>
 
 <form action="<%=request.getContextPath()%>/FindProductServlet" method="post">
     <table >
@@ -29,6 +29,5 @@
     </tr>
 </table>
 </form>
-<a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">登录界面</a>
 </body>
 </html>
