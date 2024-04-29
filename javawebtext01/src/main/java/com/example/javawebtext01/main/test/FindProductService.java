@@ -21,12 +21,12 @@ public class FindProductService extends HttpServlet {
 
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println(333);
+
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String flag = request.getParameter("flag") ;
         String hhh = "hhh";
-        System.out.println(flag);
+
         Userdata userdata = null;
         try {
             userdata = DAOFactory.getIEmpDAOInstance().find(username, password);
@@ -44,13 +44,13 @@ public class FindProductService extends HttpServlet {
 
         else{
             if (userdata != null) {
-                System.out.println(111);
+
                 request.getSession().setAttribute("userdata", userdata);
                 response.sendRedirect(request.getContextPath() + "/homepage/index.jsp");
                 request.setAttribute("message", "欢迎您，登录成功");
                 return;
             } else {
-                System.out.println(222);
+
                 response.sendRedirect(request.getContextPath() + "/index.jsp");
                 request.setAttribute("message", "登录失败，请重新登录");
                 return;

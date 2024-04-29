@@ -35,10 +35,12 @@
     <ul>
         <h2>考试管理</h2>
         <li><a href="<%=request.getContextPath()%>/FindQuestionListServlet?flag=setQuestion" target="right">参加考试</a></li>
-        <li>试题信息查询</li>
+
+        <li><a >试题信息查询</a></li>
+
     </ul>
 
-
+    <br><br><br><br><br><br><br><br><br><br>
         <li><button onclick="invalidateSessions()">退出登录</button></li>
 
 

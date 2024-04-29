@@ -18,42 +18,41 @@
 
 <h1>您的试题的信息为</h1>
 
-<table>
-    <tr>
-        <th>题目ID</th>
-        <th>题目</th>
-
-        <th>选项 A</th>
-        <th>选项 B</th>
-        <th>选项 C</th>
-        <th>选项 D</th>
-        <th>答案</th>
-
-    </tr>
-    <c:forEach var="questionData" items="${sessionScope.setQuestion}">
+<form action="<%=request.getContextPath()%>/gradeServlet" method="post">
+    <table>
         <tr>
-            <td>${questionData.questionId}</td>
-            <td>${questionData.title}</td>
+            <th>题目ID</th>
+            <th>题目</th>
 
-            <td>${questionData.optionA}</td>
-            <td>${questionData.optionB}</td>
-            <td>${questionData.optionC}</td>
-            <td>${questionData.optionD}</td>
-<td> <input type="radio" id="option1" name="option" value="A">
-    <label for="option1">A</label><br>
-    <input type="radio" id="option2" name="option" value="B">
-    <label for="option2">B</label><br>
-    <input type="radio" id="option3" name="option" value="C">
-    <label for="option3">C</label><br>
-    <input type="radio" id="option4" name="option" value="D">
-    <label for="option4">D</label><br>
-</td>
-
+            <th>选项 A</th>
+            <th>选项 B</th>
+            <th>选项 C</th>
+            <th>选项 D</th>
+            <th>答案</th>
 
         </tr>
-    </c:forEach>
-</table>
+        <c:forEach var="questionData" items="${sessionScope.setQuestion}" varStatus="loop">
+            <tr>
+                <td>${questionData.questionId}</td>
+                <td>${questionData.title}</td>
 
+                <td>${questionData.optionA}</td>
+                <td>${questionData.optionB}</td>
+                <td>${questionData.optionC}</td>
+                <td>${questionData.optionD}</td>
+                <td>
+                    A<input type="radio" id="option1" name="option${loop.index}" value="A">
+                    B<input type="radio" id="option2" name="option${loop.index}" value="B">
+                    C<input type="radio" id="option3" name="option${loop.index}" value="C">
+                    D<input type="radio" id="option4" name="option${loop.index}" value="D">
+                    <!-- 隐藏的输入字段来存储问题的ID -->
+                    <input type="hidden" name="questionId${loop.index}" value="${questionData.questionId}">
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+    <input type="submit" value="提交">
+</form>
 
 </body>
 </html>
