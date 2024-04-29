@@ -17,7 +17,7 @@
 </style>
 <body>
 <%
-    Userdata userdata = (Userdata) session.getAttribute("userdata");
+    Userdata userdata = (Userdata) session.getAttribute("findUserdata");
 
 %>
 <table>
@@ -46,7 +46,6 @@
         <td><%= userdata.getManager()==1?"是":"否" %></td>
     </tr>
 </table>
-<a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">登录界面</a>
 <br>
 <a href="<%=request.getContextPath()%>/secondpage/updateindex.jsp" target="right">更新界面</a>
 

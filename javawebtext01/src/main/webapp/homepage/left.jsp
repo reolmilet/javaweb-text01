@@ -15,6 +15,7 @@
         fetch('<%=request.getContextPath()%>/InvalidateSessionServlet')
             .then(response => response.text())
             .then(data => alert(data));
+        top.location.href = "<%=request.getContextPath()%>/index.jsp";
     }
 </script>
 <body>
@@ -22,7 +23,7 @@
     <ul>
         <h2>用户信息管理</h2>
         <li><a href="<%=request.getContextPath()%>/secondpage/addindex.jsp" target="right">注册界面</a></li>
-        <li><a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">登录界面</a></li>
+        <li><a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">查找界面</a></li>
 
     </ul>
     <ul>
@@ -33,14 +34,14 @@
     </ul>
     <ul>
         <h2>考试管理</h2>
-        <li>参加考试</li>
+        <li><a href="<%=request.getContextPath()%>/FindQuestionListServlet?flag=setQuestion" target="right">参加考试</a></li>
         <li>试题信息查询</li>
     </ul>
-    <ul>
+
 
         <li><button onclick="invalidateSessions()">退出登录</button></li>
 
-    </ul>
+
 
 </ul>
 </body>

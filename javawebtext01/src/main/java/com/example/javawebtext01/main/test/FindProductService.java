@@ -21,6 +21,7 @@ public class FindProductService extends HttpServlet {
 
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println(333);
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String flag = request.getParameter("flag") ;
@@ -32,26 +33,30 @@ public class FindProductService extends HttpServlet {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        if (flag.equals(hhh)){
+        if (flag==null){if (userdata != null) {
+
+
+            request.getSession().setAttribute("findUserdata", userdata);
+            response.sendRedirect(request.getContextPath()+"/loding/findwelcome.jsp");
+        } else {
+            response.sendRedirect(request.getContextPath()+"/loding/finderror.jsp");
+        }}
+
+        else{
             if (userdata != null) {
+                System.out.println(111);
                 request.getSession().setAttribute("userdata", userdata);
                 response.sendRedirect(request.getContextPath() + "/homepage/index.jsp");
                 request.setAttribute("message", "欢迎您，登录成功");
                 return;
             } else {
+                System.out.println(222);
                 response.sendRedirect(request.getContextPath() + "/index.jsp");
                 request.setAttribute("message", "登录失败，请重新登录");
                 return;
             }
         }
-        if (userdata != null) {
 
-
-            request.getSession().setAttribute("userdata", userdata);
-            response.sendRedirect(request.getContextPath()+"/loding/findwelcome.jsp");
-        } else {
-            response.sendRedirect(request.getContextPath()+"/loding/finderror.jsp");
-        }
     }
 }
 

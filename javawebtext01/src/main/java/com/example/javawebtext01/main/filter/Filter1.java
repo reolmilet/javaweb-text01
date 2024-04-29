@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebFilter(filterName = "Filter1",urlPatterns =
-{"/questionText/*"})
+{"/*"})
 public class Filter1 implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
@@ -29,6 +29,11 @@ public class Filter1 implements Filter {
             chain.doFilter(request, response);
             return;
         }
+        if (path.startsWith("/FindProductServlet")) {
+            chain.doFilter(request, response);
+            return;
+        }
+
         Userdata userdata = (Userdata) session.getAttribute("userdata");
         if (userdata == null) {
             res.sendRedirect(((HttpServletRequest) request).getContextPath()+"/index.jsp");

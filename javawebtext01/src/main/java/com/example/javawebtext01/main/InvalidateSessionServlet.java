@@ -14,7 +14,8 @@ public class InvalidateSessionServlet extends HttpServlet {
         if (session != null) {
             session.invalidate();
         }
-        response.getWriter().write("所已经退出登录");
+        response.getWriter().write("已经退出登录");
+
 
     }
 

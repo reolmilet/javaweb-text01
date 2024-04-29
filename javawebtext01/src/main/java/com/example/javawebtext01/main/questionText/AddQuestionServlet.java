@@ -26,10 +26,10 @@ public class AddQuestionServlet extends HttpServlet {
         protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String title = request.getParameter("title");
-        String OptionA = request.getParameter("OptionA");
-        String OptionB = request.getParameter("OptionB");
-        String OptionC = request.getParameter("OptionC");
-        String OptionD = request.getParameter("OptionD");
+        String OptionA = request.getParameter("optionA");
+        String OptionB = request.getParameter("optionB");
+        String OptionC = request.getParameter("optionC");
+        String OptionD = request.getParameter("optionD");
         String answer = request.getParameter("answer");
         HttpSession session = request.getSession();
         Userdata userdata = (Userdata) session.getAttribute("userdata");
