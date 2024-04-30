@@ -13,6 +13,6 @@
 <body>
 <p>更新失败啦！！！！</p>
 
-<a href="<%=request.getContextPath()%>/loding/findwelcome.jsp" target="right">主界面</a>
+
 </body>
 </html>

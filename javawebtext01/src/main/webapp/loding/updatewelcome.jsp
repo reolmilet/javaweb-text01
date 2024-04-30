@@ -53,7 +53,6 @@
         <td><%= userdata.getManager()==1?"是":"否" %></td>
     </tr>
 </table>
-<a href="<%=request.getContextPath()%>/loding/findwelcome.jsp" target="right">主界面</a>
 
 </body>
 </html>

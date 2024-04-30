@@ -26,7 +26,7 @@ public class FindQuestionListService extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String flag = request.getParameter("flag");
-        String setQuestion = "setQuestion";
+
 
         List<QuestionData> questionDataList = null;
         QuestionData questionData = null;
@@ -37,7 +37,7 @@ public class FindQuestionListService extends HttpServlet {
             return;
         }
 
-        if (userdata.getManager() == 1) {
+
 
             try {
 
@@ -48,6 +48,11 @@ public class FindQuestionListService extends HttpServlet {
             }
             if (questionDataList != null) {
                 if (flag == null) {
+                    if(userdata.getManager()==0){
+                        response.sendRedirect(request.getContextPath()+"/question/notManager.jsp");
+                        return;
+                    }
+
                     request.getSession().setAttribute("questionDataList", questionDataList);
 
                     response.sendRedirect(request.getContextPath() + "/question/findallwelcome.jsp");
@@ -66,10 +71,7 @@ public class FindQuestionListService extends HttpServlet {
             } else {
                 response.sendRedirect(request.getContextPath() + "/loding/findallerror.jsp");
             }
-        } else {
-
-            response.sendRedirect(request.getContextPath() + "/loding/findallerror.jsp");
         }
     }
-}
+
 

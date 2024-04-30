@@ -13,6 +13,6 @@
 <body>
 <p>查找失败啦！！！！</p>
 <p>可能是你输入错了学号或者密码或者您不是管理员</p>
-<a href="<%=request.getContextPath()%>/loding/findwelcome.jsp" target="right">主界面</a>
+
 </body>
 </html>

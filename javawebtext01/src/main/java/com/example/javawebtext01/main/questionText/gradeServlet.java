@@ -19,7 +19,6 @@ public class gradeServlet extends HttpServlet {
         for (int i = 0; i < questionDataList.size(); i++) {
             QuestionData questionData = questionDataList.get(i);
 
-
             if(questionData.getAnswer().equals(request.getParameter("option"+i))){
                 grade+=25;
             }
@@ -27,7 +26,7 @@ public class gradeServlet extends HttpServlet {
                 errorQuestionDataList.add(questionData);
             }
         }
-        System.out.println(grade);
+
         request.getSession().setAttribute("grade",grade);
         request.getSession().setAttribute("errorQuestionDataList",errorQuestionDataList);
         if(grade==100){

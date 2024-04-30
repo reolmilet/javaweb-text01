@@ -13,6 +13,6 @@
 <body>
 <p>注册失败啦！！！！</p>
 <p>可能是你输入错了学号或者已经注册过了</p>
-<a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">登录界面</a>
+
 </body>
 </html>

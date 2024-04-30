@@ -33,6 +33,10 @@ public class AddQuestionServlet extends HttpServlet {
         String answer = request.getParameter("answer");
         HttpSession session = request.getSession();
         Userdata userdata = (Userdata) session.getAttribute("userdata");
+        if(userdata.getManager()==0){
+            response.sendRedirect(request.getContextPath()+"/question/notManager.jsp");
+            return;
+        }
         if(userdata==null){
             response.sendRedirect(request.getContextPath()+"/question/AddQuestionError.jsp");
             return;

@@ -19,6 +19,6 @@
 <p>欢迎 <%= userdata.getUserName() %>，你是第 <%= visitorCount %> 个成功注册本网站的学生。</p>
 
 
-<a href="<%=request.getContextPath()%>/secondpage/findindex.jsp" target="right">登录界面</a>
+
 </body>
 </html>
