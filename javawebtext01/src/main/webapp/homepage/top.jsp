@@ -12,5 +12,6 @@
 </head>
 <body>
 <h1 align="center">用户管理系统</h1>
+<p style="position: fixed; top: 0; right: 0;">在线人数：<%=request.getServletContext().getAttribute("number")%></p>
 </body>
 </html>
